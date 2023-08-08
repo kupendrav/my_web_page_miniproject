@@ -1,0 +1,18 @@
+.zero{
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(30deg,#d2001a,#7462ff,rgb(251, 156, 13),rgb(61, 201, 203));
+background-size: 300% 300%;
+animation: color 12s ease-in-out infinite ;
+}
+@keyframes color{
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+}
