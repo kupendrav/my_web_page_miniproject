@@ -4,9 +4,9 @@ A modern, animated recipe showcase built with **Next.js 14**, **React 18**, and 
 
 ## 🌐 Live Demo
 
-👉 **[https://\<your-username\>.github.io/my_web_page_miniproject/](https://<your-username>.github.io/my_web_page_miniproject/)**
+👉 **[https://\<kupendrav\>.github.io/my_web_page_miniproject/](https://<kupendrav>.github.io/my_web_page_miniproject/)**
 
-> Replace `<your-username>` with your GitHub username after enabling GitHub Pages.
+> Replace `<kupendrav>` with your GitHub username after enabling GitHub Pages.
 
 ---
 
@@ -56,7 +56,7 @@ src/
 
 ```bash
 # Clone the repository
-git clone https://github.com/<your-username>/my_web_page_miniproject.git
+git clone https://github.com/<kupendrav>/my_web_page_miniproject.git
 cd my_web_page_miniproject
 
 # Install dependencies
