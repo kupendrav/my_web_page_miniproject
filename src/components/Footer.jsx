@@ -22,6 +22,7 @@ export default function Footer() {
             <h4>Categories</h4>
             <Link href="/menu/?cat=beverages">Beverages</Link>
             <Link href="/menu/?cat=street-food">Street Food</Link>
+            <Link href="/about/">About Us</Link>
             <Link href="/contact/">Contact Us</Link>
             <Link href="/faq/">FAQ</Link>
           </div>

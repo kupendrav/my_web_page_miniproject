@@ -27,12 +27,13 @@ export default function HomePage() {
       if (cards?.length) {
         gsap.from(cards, {
           scrollTrigger: { trigger: catRef.current, start: 'top 80%' },
-          y: 50,
-          scale: 0.9,
+          y: 60,
+          scale: 0.85,
           opacity: 0,
-          stagger: 0.08,
-          duration: 0.7,
-          ease: 'back.out(1.7)',
+          rotateY: 15,
+          stagger: 0.12,
+          duration: 0.8,
+          ease: 'back.out(1.4)',
         });
       }
 
@@ -41,13 +42,14 @@ export default function HomePage() {
       if (vals?.length) {
         vals.forEach(el => {
           const target = parseInt(el.dataset.value, 10);
-          gsap.from(el, {
+          const suffix = el.dataset.suffix || '';
+          const obj = { val: 0 };
+          gsap.to(obj, {
+            val: target,
             scrollTrigger: { trigger: el, start: 'top 85%' },
-            textContent: 0,
             duration: 2,
             ease: 'power2.out',
-            snap: { textContent: 1 },
-            onUpdate() { el.textContent = Math.round(parseFloat(el.textContent)) + (el.dataset.suffix || ''); },
+            onUpdate() { el.textContent = Math.round(obj.val) + suffix; },
           });
         });
       }

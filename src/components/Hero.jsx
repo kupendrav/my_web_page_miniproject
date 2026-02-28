@@ -74,7 +74,7 @@ export default function Hero() {
     <section ref={heroRef} className="hero">
       <div className="hero-bg">
         <video autoPlay muted loop playsInline poster="">
-          <source src="/images/lover.mp4" type="video/mp4" />
+          <source src="/images/cinematic-b-roll-burger.mp4" type="video/mp4" />
         </video>
       </div>
       <div className="hero-overlay" />
