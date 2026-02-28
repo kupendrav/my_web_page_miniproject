@@ -4,11 +4,7 @@ A modern, animated recipe showcase built with **Next.js 14**, **React 18**, and 
 
 ## 🌐 Live Demo
 
-👉 **[https://\<kupendrav\>.github.io/my_web_page_miniproject/](https://<kupendrav>.github.io/my_web_page_miniproject/)**
-
-> Replace `<kupendrav>` with your GitHub username after enabling GitHub Pages.
-
----
+👉 **[https://kupendrav.github.io/my_web_page_miniproject/](https://<kupendrav>.github.io/my_web_page_miniproject/)**
 
 ## ✨ Features
 
@@ -56,7 +52,7 @@ src/
 
 ```bash
 # Clone the repository
-git clone https://github.com/<kupendrav>/my_web_page_miniproject.git
+git clone https://github.com/kupendrav/my_web_page_miniproject.git
 cd my_web_page_miniproject
 
 # Install dependencies
@@ -87,7 +83,7 @@ npm run build
 
 ## 👥 Team
 
-Harshita • Kishore SN • Kushi • Sai • Kupendra • Janavi • Jayanavya • Keer
+Harshita • Kishore SN • Kushi • Sai Srethan • Kupendra • Janavi • Jayanavya • Keerthana DC • Kishore Kumar 
 
 ## 📄 License
 

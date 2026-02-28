@@ -1,6 +1,7 @@
 import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import ThemeProvider from '@/components/ThemeProvider';
 
 export const metadata = {
   title: 'FoodLovers — Authentic Indian Recipes',
@@ -10,11 +11,23 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: `
+          (function() {
+            try {
+              var t = localStorage.getItem('foodlovers-theme') || 'dark';
+              document.documentElement.setAttribute('data-theme', t);
+            } catch(e) {}
+          })();
+        ` }} />
+      </head>
       <body>
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
+        <ThemeProvider>
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );

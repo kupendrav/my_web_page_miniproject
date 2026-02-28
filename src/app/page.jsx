@@ -72,7 +72,7 @@ export default function HomePage() {
       <Hero />
 
       {/* Categories */}
-      <section className="section">
+      <section className="section" style={{ background: 'var(--bg-primary)', position: 'relative', zIndex: 3 }}>
         <div className="container">
           <div className="section-header">
             <h2 className="heading-lg">Explore <span className="text-gradient">Cuisines</span></h2>
@@ -93,7 +93,7 @@ export default function HomePage() {
       </section>
 
       {/* Stats */}
-      <section style={{ borderTop: '1px solid var(--border)', borderBottom: '1px solid var(--border)' }}>
+      <section style={{ borderTop: '1px solid var(--border)', borderBottom: '1px solid var(--border)', background: 'var(--bg-primary)', position: 'relative', zIndex: 3 }}>
         <div className="container" ref={statsRef}>
           <div className="stats-row">
             <div className="stat-item">
@@ -117,7 +117,7 @@ export default function HomePage() {
       </section>
 
       {/* Featured Recipes */}
-      <section className="section" ref={featuredRef}>
+      <section className="section" ref={featuredRef} style={{ background: 'var(--bg-primary)', position: 'relative', zIndex: 3 }}>
         <div className="container">
           <div className="section-header">
             <h2 className="heading-lg">Featured <span className="text-gradient">Recipes</span></h2>
@@ -138,7 +138,7 @@ export default function HomePage() {
       </section>
 
       {/* CTA */}
-      <section className="section" style={{ textAlign: 'center', position: 'relative', overflow: 'hidden' }}>
+      <section className="section" style={{ textAlign: 'center', position: 'relative', overflow: 'hidden', background: 'var(--bg-primary)', zIndex: 3 }}>
         <div className="gradient-orb" style={{ width: 400, height: 400, background: 'var(--accent-blue)', top: -100, left: -100 }} />
         <div className="gradient-orb" style={{ width: 300, height: 300, background: 'var(--accent-pink)', bottom: -80, right: -80 }} />
         <div className="container" style={{ position: 'relative', zIndex: 1 }}>
