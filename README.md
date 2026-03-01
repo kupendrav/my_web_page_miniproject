@@ -83,7 +83,7 @@ npm run build
 
 ## 👥 Team
 
-Harshita • Kishore SN • Kushi • Sai Srethan • Kupendra • Janavi • Jayanavya • Keerthana DC • Kishore Kumar 
+Harshita • Kishore SN • Kushi • Sai Srethan • Kupendra • Janavi • Jayanavya • Keerthana DC • Kishore Kumar • Hemanth Reddy
 
 ## 📄 License
 
