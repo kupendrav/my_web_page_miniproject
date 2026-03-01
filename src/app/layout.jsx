@@ -3,10 +3,12 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ThemeProvider from '@/components/ThemeProvider';
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+
 export const metadata = {
   title: 'FoodLovers — Authentic Indian Recipes',
   description: 'Discover 28+ authentic Indian recipes from every corner of the subcontinent. Vegetarian, Non-Veg, Beverages, Desserts & Street Food.',
-  icons: { icon: '/images/logo-display.svg' },
+  icons: { icon: `${basePath}/images/logo-display.svg` },
 };
 
 export default function RootLayout({ children }) {

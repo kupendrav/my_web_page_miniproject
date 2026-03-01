@@ -55,7 +55,7 @@ export default function RecipeCard({ recipe, index = 0 }) {
       <Link href={`/recipe/${recipe.slug}/`} className="card-link" aria-label={recipe.name} />
       <div className="card-image">
         {recipe.image ? (
-          <Image src={recipe.image} alt={recipe.name} width={400} height={250} style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
+          <Image src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}${recipe.image}`} alt={recipe.name} width={400} height={250} style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
         ) : (
           <div className="card-placeholder">{categoryEmojis[recipe.category] || '🍽️'}</div>
         )}

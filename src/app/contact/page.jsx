@@ -152,7 +152,7 @@ export default function ContactPage() {
           <div className="team-grid">
             {teamMembers.map(member => (
               <div key={member.name} className="team-card">
-                <Image src={member.img} alt={member.name} width={80} height={80} className="team-avatar" />
+                <Image src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}${member.img}`} alt={member.name} width={80} height={80} className="team-avatar" />
                 <div className="team-name">{member.name}</div>
                 <div className="team-role">{member.role}</div>
               </div>

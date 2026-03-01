@@ -126,7 +126,7 @@ export default function AboutPage() {
               <div key={member.name} className="about-team-card" style={{ '--card-accent': member.color }}>
                 <div className="about-team-img-wrap">
                   <Image
-                    src={member.img}
+                    src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}${member.img}`}
                     alt={member.name}
                     width={160}
                     height={160}

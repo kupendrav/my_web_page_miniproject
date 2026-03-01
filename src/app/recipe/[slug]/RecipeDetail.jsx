@@ -71,7 +71,7 @@ export default function RecipeDetail({ recipe, related }) {
       {/* Hero Image */}
       <div className="recipe-hero">
         {recipe.image ? (
-          <Image src={recipe.image} alt={recipe.name} width={1200} height={500} style={{ objectFit: 'cover', width: '100%', height: 500 }} priority />
+          <Image src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}${recipe.image}`} alt={recipe.name} width={1200} height={500} style={{ objectFit: 'cover', width: '100%', height: 500 }} priority />
         ) : (
           <div className="recipe-hero-placeholder">{categoryEmojis[recipe.category] || '🍽️'}</div>
         )}
@@ -166,7 +166,7 @@ export default function RecipeDetail({ recipe, related }) {
                   <div className="related-card">
                     <div style={{ aspectRatio: '16/10', overflow: 'hidden' }}>
                       {r.image ? (
-                        <Image src={r.image} alt={r.name} width={300} height={188} style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
+                        <Image src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}${r.image}`} alt={r.name} width={300} height={188} style={{ objectFit: 'cover', width: '100%', height: '100%' }} />
                       ) : (
                         <div className="card-placeholder" style={{ height: '100%' }}>{categoryEmojis[r.category] || '🍽️'}</div>
                       )}
